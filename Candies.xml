@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<candies>
+    <!--First candie-->
+    <candie id="1">
+        <name>Rafaello</name>
+        <energy>100</energy>
+        <form>sphere</form>
+        <ingredients>
+            <filling>nut</filling>
+            <glaze>coconut</glaze>
+        </ingredients>
+        <production>
+            <country>Italy</country>
+            <confectionary>Ferrero Rocher</confectionary>
+        </production>
+    </candie>
+    <!--Second candie-->
+    <candie id="2">
+        <name>Korivka</name>
+        <energy>140</energy>
+        <form>parallelepiped</form>
+        <ingredients>
+            <filling>milk nougat</filling>
+            <glaze>chocolate</glaze>
+        </ingredients>
+        <production>
+            <country>Ukraine</country>
+            <confectionary>Roschen</confectionary>
+        </production>
+    </candie>
+    <!--Third candie-->
+    <candie id="3">
+        <name>Nuts</name>
+        <energy>350</energy>
+        <form>dragee</form>
+        <ingredients>
+            <filling>nut</filling>
+            <glaze>chocolate</glaze>
+        </ingredients>
+        <production>
+            <country>USA</country>
+            <confectionary>Mars</confectionary>
+        </production>
+    </candie>
+    <!--Fourth candie-->
+    <candie id="4">
+        <name>KitKat</name>
+        <energy>500</energy>
+        <form>bar</form>
+        <ingredients>
+            <filling>wafer</filling>
+            <glaze>chocolate</glaze>
+        </ingredients>
+        <production>
+            <country>Russia</country>
+            <confectionary>Nestle</confectionary>
+        </production>
+    </candie>
+    <!--Fifth candie-->
+    <candie id="5">
+        <name>Nesquik</name>
+        <energy>320</energy>
+        <form>bar</form>
+        <ingredients>
+            <filling>nougat</filling>
+            <glaze>chocolate</glaze>
+        </ingredients>
+        <production>
+            <country>Russia</country>
+            <confectionary>Nestle</confectionary>
+        </production>
+    </candie>
+    <!--Sixth candie-->
+    <candie id="6">
+        <name>Alenka</name>
+        <energy>250</energy>
+        <form>parallelepiped</form>
+        <ingredients>
+            <filling>chocolate</filling>
+            <glaze>chocolate</glaze>
+        </ingredients>
+        <production>
+            <country>Belarus</country>
+            <confectionary>Kommunarka</confectionary>
+        </production>
+    </candie>
+    <!--Seventh candie-->
+    <candie id="7">
+        <name>Truffle</name>
+        <energy>280</energy>
+        <form>cone</form>
+        <ingredients>
+            <filling>praline</filling>
+            <glaze>chocolate</glaze>
+        </ingredients>
+        <production>
+            <country>Belarus</country>
+            <confectionary>Kommunarka</confectionary>
+        </production>
+    </candie>
+</candies>

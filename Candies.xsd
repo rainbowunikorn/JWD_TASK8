@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="candies" type="candiesType"/>
+  <xs:complexType name="ingredientsType">
+    <xs:sequence>
+      <xs:element name="filling">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="nut"/>
+            <xs:enumeration value="milk nougat"/>
+            <xs:enumeration value="wafer"/>
+            <xs:enumeration value="nougat"/>
+            <xs:enumeration value="chocolate"/>
+            <xs:enumeration value="praline"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="glaze">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="coconut"/>
+            <xs:enumeration value="chocolate"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="productionType">
+    <xs:sequence>
+      <xs:element name="country">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Italy"/>
+            <xs:enumeration value="Ukraine"/>
+            <xs:enumeration value="USA"/>
+            <xs:enumeration value="Russia"/>
+            <xs:enumeration value="Belarus"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="confectionary">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Ferrero Rocher"/>
+            <xs:enumeration value="Roschen"/>
+            <xs:enumeration value="Mars"/>
+            <xs:enumeration value="Nestle"/>
+            <xs:enumeration value="Kommunarka"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="candieType">
+    <xs:sequence>
+      <xs:element name="name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Rafaello"/>
+            <xs:enumeration value="Korivka"/>
+            <xs:enumeration value="Nuts"/>
+            <xs:enumeration value="KitKat"/>
+            <xs:enumeration value="Nesquik"/>
+            <xs:enumeration value="Alenka"/>
+            <xs:enumeration value="Truffle"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="energy">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="100"/>
+            <xs:enumeration value="140"/>
+            <xs:enumeration value="350"/>
+            <xs:enumeration value="500"/>
+            <xs:enumeration value="320"/>
+            <xs:enumeration value="250"/>
+            <xs:enumeration value="280"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="form">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="sphere"/>
+            <xs:enumeration value="parallelepiped"/>
+            <xs:enumeration value="dragee"/>
+            <xs:enumeration value="bar"/>
+            <xs:enumeration value="cone"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="ingredientsType" name="ingredients"/>
+      <xs:element type="productionType" name="production"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="candiesType">
+    <xs:sequence>
+      <xs:element type="candieType" name="candie" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>First candieSecond candieThird candieFourth candieFifth candieSixth candieSeventh candie</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
