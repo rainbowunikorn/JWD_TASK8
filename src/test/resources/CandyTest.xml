@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<candy>
+<candies>
     <!--First candie-->
     <chocolate-candy id="1">
         <name>CocoNut</name>
@@ -13,6 +13,6 @@
         <name>Mint</name>
         <ingredients>syrup</ingredients>
         <country>Canada</country>
-        <appearance>stick</appearance>
+        <appearance>STICK</appearance>
     </lollipop>
-</candy>
+</candies>

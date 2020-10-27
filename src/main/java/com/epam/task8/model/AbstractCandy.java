@@ -11,7 +11,7 @@ import java.util.Objects;
 })
 public abstract class AbstractCandy {
 
-    @XmlAttribute(name = "id",required = true)
+    @XmlAttribute(name ="id",required = true)
     private int id;
    @XmlElement(name="name",required = true)
     private String name;

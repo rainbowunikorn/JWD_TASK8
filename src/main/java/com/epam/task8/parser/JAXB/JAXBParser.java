@@ -1,14 +1,15 @@
 package com.epam.task8.parser.JAXB;
 
 import com.epam.task8.model.AbstractCandy;
-import com.epam.task8.model.CandyStorage;
+import com.epam.task8.model.Candies;
 import com.epam.task8.parser.Parser;
 import org.apache.log4j.Logger;
 
+import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
-import java.io.File;
+import javax.xml.validation.SchemaFactory;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -22,11 +23,11 @@ public class JAXBParser implements Parser {
         FileReader reader = null;
         try {
 
-            JAXBContext context = JAXBContext.newInstance(CandyStorage.class);
+            JAXBContext context = JAXBContext.newInstance(Candies.class);
             Unmarshaller unmarshaller = context.createUnmarshaller();
             reader = new FileReader(file);
-            CandyStorage candies = (CandyStorage) unmarshaller.unmarshal(reader);
-            return candies.getCandyStorage();
+            Candies candies = (Candies) unmarshaller.unmarshal(reader);
+            return candies.getCandies();
 
         } catch (JAXBException | FileNotFoundException e) {
             log.warn("parser error " + e);

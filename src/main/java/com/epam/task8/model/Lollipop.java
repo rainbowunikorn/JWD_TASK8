@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.*;
 import java.util.Objects;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name="lollipop")
+@XmlType(name = "lollipop",namespace = "http://www.example.com/candies")
 public class Lollipop extends AbstractCandy {
     @XmlElement(namespace = "http://www.example.com/candies",required = true)
     private LollipopType appearance;
