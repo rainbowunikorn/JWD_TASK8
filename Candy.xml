@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <candies xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns="http://www.example.com/candies"
+             xs:schemaLocation="http://www.example.com/candies  Candy.xsd">
+    <!--First candie-->
+    <chocolate-candy id="1">
+        <name>Rafaello</name>
+        <ingredients>coconut</ingredients>
+        <country>Italy</country>
+        <chocolate-percent>50</chocolate-percent>
+    </chocolate-candy>
+    <!--Second candie-->
+    <chocolate-candy id="2">
+        <name>Korivka</name>
+        <ingredients>chocolate</ingredients>
+        <country>Ukraine</country>
+        <chocolate-percent>62</chocolate-percent>
+    </chocolate-candy>
+    <!--Third candie-->
+    <chocolate-candy id="3">
+        <name>Nuts</name>
+        <ingredients>nougat</ingredients>
+        <country>USA</country>
+        <chocolate-percent>60</chocolate-percent>
+    </chocolate-candy>
+    <!--Fourth candie-->
+    <chocolate-candy id="4">
+        <name>KitKat</name>
+        <ingredients>chocolate</ingredients>
+        <country>Russia</country>
+        <chocolate-percent>75</chocolate-percent>
+    </chocolate-candy>
+    <!--Fifth candie-->
+    <lollipop id="5">
+        <name>Tic Tac</name>
+        <ingredients>sugar</ingredients>
+        <country>Russia</country>
+        <appearance>DRAGEE</appearance>
+    </lollipop>
+    <!--Sixth candie-->
+    <lollipop id="6">
+        <name>Chupa Chups</name>
+        <ingredients>syrup</ingredients>
+        <country>Spanish</country>
+        <appearance>STICK</appearance>
+    </lollipop>
+    <!--Seventh candie-->
+    <lollipop id="7">
+        <name>Dum Dums</name>
+        <ingredients>syrup</ingredients>
+        <country>Canada</country>
+        <appearance>STICK</appearance>
+    </lollipop>
+</candies>
