@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<candy>
+    <!--First candie-->
+    <chocolate-candy id="1">
+        <name>CocoNut</name>
+        <ingredients>coconut</ingredients>
+        <country>Italy</country>
+        <chocolate-percent>50</chocolate-percent>
+    </chocolate-candy>
+    <!--Second candie-->
+    <lollipop id="2">
+        <name>Mint</name>
+        <ingredients>syrup</ingredients>
+        <country>Canada</country>
+        <appearance>stick</appearance>
+    </lollipop>
+</candy>
