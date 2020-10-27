@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/candies"
+        xmlns:xs="http://www.example.com/candies"
+        elementFormDefault="qualified">
+
+  <element name="candy" type="xs:AbstractCandy" abstract="true"/>
+  <element name="chocolate-candy" type="xs:ChocolateCandy" substitutionGroup="xs:candy"/>
+  <element name="lollipop" type="xs:Lollipop" substitutionGroup="xs:candy"/>
+
+  <element name="candies">
+    <complexType>
+      <sequence>
+        <element ref="xs:candy" minOccurs="2" maxOccurs="unbounded"/>
+      </sequence>
+    </complexType>
+  </element>
+
+  <complexType name="AbstractCandy">
+    <attribute name="id" type="int"/>
+  </complexType>
+
+<complexType name="ChocolateCandy">
+  <complexContent>
+    <extension base="xs:AbstractCandy">
+      <sequence>
+        <element name="name" type="string"/>
+        <element name="ingredients" >
+          <simpleType>
+            <restriction base="string">
+              <enumeration value="coconut"/>
+              <enumeration value="chocolate"/>
+              <enumeration value="nougat"/>
+              <enumeration value="sugar"/>
+              <enumeration value="syrup"/>
+            </restriction>
+          </simpleType>
+        </element>
+        <element name="country" type="string"/>
+        <element name="chocolate-percent" type="int">
+        </element>
+      </sequence>
+    </extension>
+  </complexContent>
+</complexType>
+
+  <complexType name="Lollipop">
+    <complexContent>
+      <extension base="xs:AbstractCandy">
+        <sequence>
+          <element name="name" type="string"/>
+          <element name="ingredients" >
+            <simpleType>
+              <restriction base="string">
+                <enumeration value="coconut"/>
+                <enumeration value="chocolate"/>
+                <enumeration value="nougat"/>
+                <enumeration value="sugar"/>
+                <enumeration value="syrup"/>
+              </restriction>
+            </simpleType>
+          </element>
+          <element name="country" type="string"/>
+          <element name="appearance">
+            <simpleType>
+              <restriction base="string">
+                <enumeration value="DRAGEE"/>
+                <enumeration value="STICK"/>
+              </restriction>
+            </simpleType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+
+</schema>
